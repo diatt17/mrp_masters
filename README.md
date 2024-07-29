@@ -16,10 +16,8 @@ This repository contains the implementation and analysis for the project "Assess
 - [Results](#results)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -37,12 +35,12 @@ In recent years, recommender systems have become integral to enhancing user expe
 
 - **KNNBasic**: Implemented with Pearson similarity, this algorithm is effective in user-based collaborative filtering.
 - **SVD**: A matrix factorization approach known for its accuracy and robustness in recommendation tasks.
-- **CoClustering**:
+- **CoClustering**: Clustered users and items simultaneously into co-clusters, leveraging the similarities within and across these clusters to make recommendations.
 
 ### Graph-Based Models
 
 - **LightGCN**: Leverages graph convolutional networks to improve recommendation accuracy.
--  **Graph Attentiion Network (GAT)**: 
+- **Graph Attentiion Network (GAT)**: Utilizes attention mechanisms to weigh the importance of different neighboring nodes, enhancing the quality of node embeddings for recommendation.
 - **GraphSAGE**: Generates node embeddings by sampling and aggregating features from a node's local neighborhood.
 
 ### Hypergraph-Based Models
@@ -52,7 +50,7 @@ In recent years, recommender systems have become integral to enhancing user expe
 
 ## Results
 
-The results section contains a detailed analysis of each algorithm's performance based on metrics such as RMSE, MAE, Precision@10, and Recall@10. Please refer to the [results](results/) directory for the full analysis.
+The results section contains a detailed analysis of each algorithm's performance based on metrics such as RMSE, MAE, Precision@10, and Recall@10. Please refer to the [results] directory for the full analysis.
 
 ## Conclusion
 
@@ -66,21 +64,8 @@ Future research can explore several avenues:
 2. Investigating the scalability of these models with larger datasets and real-world applications.
 3. Developing a design space framework for recommender systems to suggest the most suitable algorithms based on dataset characteristics.
 
-## Installation
-
-To run the code in this repository, follow these steps:
-
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/yourusername/recommender-system-comparison.git
-    cd recommender-system-comparison
-
-    ```
 
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
